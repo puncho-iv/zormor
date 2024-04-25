@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #00959c;
+  --primary-color-lighter: #f4ffff;
+  --primary-color-10: #d6fff7;
+  --primary-color-50: #00949c96;
+  --secondary-color: rgb(236, 218, 53);
+  --button-color: #ececed;
+
+  --blue: #0084ff;
+  --red: #f03d3d;
+  --red-10: #ffc7c7;
+  --red-5: #fff1f1;
+  --yellow: #d07d00;
+  --yellow-10: #fff5db;
+  --blue-bg: #c2e2ff;
+  --lime-green: #c6f1dd;
+  --yellow-card: #ffecba;
+  --card-bg: #f8f8f8;
+  --img-bg: #f3f3f4;
+
+  --white-100: #ffffff;
+  --white-80: #fafafa;
+  --white-150: #e9f4ff;
+
+  --gray: #8d8a95;
+  --gray-10: #ececed;
+  --nav-bg: #f3f3f4;
+  --active-bg: #e2fcf0;
+  --red-dim: #ffe0e0;
+  --red-dim-bg: #fff9f9;
+  --red-dark: #cf2a2a;
+  --border-b: #c6c5ca;
+
+  --primary-color-20: #effeff;
+  --primary-color-40: #b0dee0;
+  --pending-bg: #fff5db;
+
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "Inter", sans-serif;
+}
+
+input,
+select,
+.select,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 0.1px solid var(--gray-10);
+  border-radius: 15px;
+  outline: none;
+  font: bold;
+}
+
+input:focus-within,
+select:focus-within,
+.select:focus,
+textarea:focus-within {
+  /* outline: 3px solid var(--primary-color-50); */
+  border: 3px solid var(--primary-color);
+}
+
+input[type="checkbox"] {
+  outline: none;
+}
+
+button {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 15px;
+}
+
+.btn_primary {
+  background-color: var(--primary-color);
+  color: var(--white-100);
+  font-size: 16px;
+  align-items: center;
+}
+
+.btn_primary_outline {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 16px;
+  align-items: center;
+}
+
+.btn_outline {
+  background-color: #f5fffd;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-size: 16px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  border-radius: 20px;
+  background-color: #05897c21;
+  opacity: 0.3;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.small_text {
+  font-size: 14px;
+  color: #8d8a95;
+  font-weight: 400;
+}
+
+.header_text {
+  font-size: 20px;
+  font-weight: 700;
+}
